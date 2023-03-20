@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+	box-sizing: border-box;
+}
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-image: url("../img/imgowo.jpg");
+        background-size: cover;
+    }
+	.mySlides {display:none;}
+
+	img{
+		vertical-align: middle;
+	}
+
+	.slideshows-container {
+		max-width: 80%;
+		position: relative;
+		margin: auto;
+	}
+		.container{
+			display: flex;
+			flex-direction: row;
+		}
+
+		.container-ld {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: calc(100vh - 20px - 40px); /* subtract footer height and container padding */
+			border-radius: 20px;
+			background-color: rgba(255, 255, 255, 0.7);
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+			padding: 20px;
+			max-width: 500px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+			text-align: center;
+			color: #333;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			text-align: justify;
+			color: #333;
+			margin-bottom: 20px;
+		}
+
+		.button {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		.button:hover {
+			background-color: #0062cc;
+		}
+
+		.footer {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 20px;
+			background-color: #333;
+			color: #fff;
+			font-size: 14px;
+		}
+
+		.footer p {
+			margin: 0;
+            color: #fff;
+		}
+        		
+		/* Navbar styles */
+		.navbar {
+			background-color: #5195e2;
+			height: 56px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+            text-decoration: none;
+		}
+		ul {
+  			list-style-type: none;
+  			margin: 0;
+  			padding: 0;
+		}
+
+
+		.navbar-brand,
+		.nav-link {
+			color: #fff;
+			text-decoration: none;
+			padding: 0 20px;
+			line-height: 56px;
+			height: 56px;
+			display: inline-block;
+		}
+		.nav-item {
+			display: inline;
+		}
+
+		.navbar-brand:hover,
+		.nav-link:hover {
+			background-color: #3c7db8;
+		}
