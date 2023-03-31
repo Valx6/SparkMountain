@@ -22,7 +22,6 @@ if(isset($_SESSION['username'])) {
   $result = mysqli_query($conn, $sql);
 
   if(mysqli_num_rows($result) == 1) {
-    // User is an administrator, display admin options
     echo "<h1>Welcome, $username!</h1>";
     echo "<h2>Add a new energy drink product:</h2>";
     echo "<form action='process_product.php' method='post'>";
@@ -34,12 +33,10 @@ if(isset($_SESSION['username'])) {
     echo "<input type='submit' value='Add Product'>";
     echo "</form>";
   } else {
-    // User is not an administrator, display error message
     echo "You do not have permission to access this page.";
   }
 
 } else {
-  // User is not logged in, redirect to login page
   header("Location: login.php");
   exit();
 }
