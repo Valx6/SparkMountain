@@ -5,23 +5,19 @@ if(!isset($_SESSION['username'])){
     header('Location: login.php');
 }
 
-// Set up connection to database
 $host = "localhost";
 $user = "root";
 $password = "";
 $dbname = "energy";
 $conn = mysqli_connect($host, $user, $password, $dbname);
 
-// Check connection
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-// Check if user is already logged in
 if(isset($_SESSION['username'])) {
   $username = $_SESSION['username'];
 
-  // Check if user is an administrator
   $sql = "SELECT * FROM users WHERE username='$username' AND is_admin=1";
   $result = mysqli_query($conn, $sql);
 

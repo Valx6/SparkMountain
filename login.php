@@ -13,7 +13,6 @@ if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !== true) {
     exit;
 }
 
-// Connect to the database
 $host = "localhost";
 $username = "username";
 $password = "password";
