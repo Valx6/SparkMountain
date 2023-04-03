@@ -12,9 +12,9 @@ if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !== true) {
 }
 
 $host = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+$username = "root";
+$password = "";
+$dbname = "energy";
 
 $conn = mysqli_connect($host, $username, $password, $dbname);
 
