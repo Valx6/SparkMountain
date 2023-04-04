@@ -27,12 +27,12 @@ if (isset($_POST['action'])) {
         case 'add':
             $name = $_POST['name'];
             $price = $_POST['price'];
-            $sql = "INSERT INTO products (name, price) VALUES ('$name', $price)";
+            $sql = "INSERT INTO aanbiedingen (name, price) VALUES ('$name', $price)";
             mysqli_query($conn, $sql);
             break;
         case 'remove':
             $id = $_POST['id'];
-            $sql = "DELETE FROM products WHERE id = $id";
+            $sql = "DELETE FROM aanbiedingen WHERE id = $id";
             mysqli_query($conn, $sql);
             break;
     }

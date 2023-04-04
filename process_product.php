@@ -18,7 +18,7 @@ if (!$conn) {
 if(isset($_SESSION['username'])) {
   $username = $_SESSION['username'];
 
-  $sql = "SELECT * FROM users WHERE username='$username' AND is_admin=1";
+  $sql = "SELECT * FROM gebruikers WHERE username='$username' AND permission=2";
   $result = mysqli_query($conn, $sql);
 
   if(mysqli_num_rows($result) == 1) {
